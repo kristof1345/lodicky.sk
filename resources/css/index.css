@@ -6,10 +6,6 @@
   transition: 100ms all;
 }
 
-body {
-  padding: 20px 10px;
-}
-
 main {
   margin: 0 auto 0 auto;
   padding-bottom: 100px;
@@ -18,7 +14,6 @@ main {
 
 /* Section hero */
 #hero {
-  margin-top: 20px;
   margin-bottom: 13px;
 }
 
@@ -45,11 +40,11 @@ main {
   font-size: 18px;
 }
 
-.content-para {
+/* .content-para {
   text-indent: 25px;
   line-height: 25px;
   padding-bottom: 30px;
-}
+} */
 
 .subhead {
   font-weight: 700;
@@ -106,13 +101,8 @@ main {
 }
 
 @media (max-width: 750px) {
-  body {
-    padding: 15px;
-  }
-
   /* Section hero */
   #hero {
-    margin-top: 20px;
     margin-bottom: 13px;
   }
 
@@ -129,7 +119,6 @@ main {
 @media (max-width: 500px) {
   /* Section hero */
   #hero {
-    margin-top: 20px;
     margin-bottom: 13px;
   }
 

@@ -6,16 +6,89 @@
   transition: 100ms all;
 }
 
-body {
-  padding: 20px 10px;
-}
-
 main {
   margin: 0 auto 0 auto;
   padding-bottom: 100px;
-  max-width: 700px;
+  max-width: 900px;
+}
+
+.content {
+  padding: 20px 50px;
+}
+
+.content-button-holder {
+  text-align: center;
+}
+
+.content-button {
+  display: inline-block;
+  color: rgb(53, 53, 53);
+  text-decoration: none;
+  background-color: rgb(255, 255, 0);
+  border: none;
+  font-weight: 700;
+  padding: 13px 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 22px;
+  box-shadow: 1px 1px 5px 0px rgb(168, 166, 166);
+}
+
+.content-head {
+  font-size: 27px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.content-bullets {
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+.content-bullet {
+  padding-bottom: 15px;
+}
+
+.headline {
+  font-size: 55px;
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 3px;
+}
+
+.horizontal-benefits {
+  padding: 20px 0 40px 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ben-num {
+  display: block;
+  font-size: 50px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  opacity: 0.1;
+}
+
+.image-sec {
+  padding: 40px 100px 30px 100px;
+  height: 500px;
+}
+
+.ren-image {
+  width: 100%;
+  border-radius: 3px;
 }
 
 img {
-  width: 100%;
+  width: 400px;
 }
