@@ -50,6 +50,15 @@ main {
   padding-bottom: 15px;
 }
 
+.boldb {
+  font-weight: 600;
+}
+
+.content-head3 {
+  font-size: 23px;
+  padding: 0 0 10px 0;
+}
+
 .headline {
   font-size: 55px;
   margin: 20px 0 20px 0;
@@ -81,7 +90,6 @@ iframe {
 
 .image-sec {
   padding: 40px 100px 30px 100px;
-  height: 500px;
 }
 
 .ren-image {
@@ -91,4 +99,38 @@ iframe {
 
 img {
   width: 400px;
+}
+
+@media (max-width: 750px) {
+  .content {
+    padding: 10px 0;
+  }
+
+  .horizontal-benefits {
+    gap: 10px;
+  }
+
+  .image-sec {
+    padding: 30px 15px 30px 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .headline {
+    font-size: 45px;
+  }
+
+  .horizontal-benefits {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ben-num {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .headline {
+    font-size: 9.5vw;
+  }
 }
