@@ -166,6 +166,11 @@ img {
   animation-duration: 1.5s;
 }
 
+.video-note {
+  font-size: 12px;
+  text-align: center;
+}
+
 @keyframes fade {
   from {
     opacity: 0.4;
