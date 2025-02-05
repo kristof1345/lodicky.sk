@@ -1,0 +1,137 @@
+---
+import logo from "../assets/boat_logo.svg";
+import "../styles/global.css";
+import Hamburger from "../assets/hamburger.svg";
+import Close from "../assets/close.svg";
+import Image from "astro/components/Image.astro";
+---
+
+<header>
+  <div id="logo-container">
+    <img src={logo.src} alt="Site Logo">
+    <h1>NL Lodicky</h1>
+  </div>
+  <nav id="desktop">
+    <a href="/">Domov</a>
+    <a href="/oprava">Oprava</a>
+    <a href="/lodky">Zavážacie loďky</a>
+    <a href="/kontakt">Kontakty</a>
+  </nav>
+  <div id="mobile">
+    <img src={Hamburger.src} alt="Menu" id="hamburger" />
+    <nav id="mobile-nav">
+      <img src={Close.src} alt="Close" id="close" />
+      <a href="/">Domov</a>
+      <a href="/oprava">Oprava</a>
+      <a href="/lodky">Zavážacie loďky</a>
+      <a href="/kontakt">Kontakty</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const close = document.getElementById("close");
+  const mobileNav = document.getElementById("mobile-nav");
+
+  hamburger.addEventListener("click", () => {
+    mobileNav.style.display = "flex";
+    document.body.classList.add('menu-open');
+  });
+
+  close.addEventListener("click", () => {
+    mobileNav.style.display = "none";
+    document.body.classList.remove('menu-open');
+  });
+</script>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    border-bottom: 1px solid rgba(65, 129, 249, 0.192);
+  }
+
+  #logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #logo-container img {
+    width: 33px;
+    height: 33px;
+    margin: 0.1rem 1rem 0.1rem 0.5rem;
+  }
+
+  #logo-container h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  #desktop a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  body.menu-open {
+    overflow: hidden; /* Disable scrolling */
+  }
+
+  nav a:hover {
+    border-bottom: 2px solid rgb(65, 129, 249)
+  }
+
+  @media (max-width: 615px) {
+    #logo-container h1 {
+      display: none;
+    }
+
+    #desktop {
+      display: none;
+    }
+
+    #mobile {
+      display: flex;
+      justify-content: center;
+    }
+
+    #hamburger, #close {
+      width: 30px;
+      height: 30px;
+    }
+
+    #close {
+      position: absolute;
+      top: 15px;
+      right: 8px;
+    }
+
+    #mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: white;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #mobile-nav a {
+      text-decoration: none;
+      font-size: 18px;
+    }
+  }
+</style>
