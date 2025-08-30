@@ -3,20 +3,18 @@ import Header from "../../components/Header.astro";
 import Footer from "../Footer.astro";
 
 import Image from "astro/components/Image.astro";
-import SpeedingSlider from "../../components/SpeedingSlider.astro";
+import SpeedingSlider2 from "../../components/SpeedingSlider2.astro";
 
-import OtherSide from "../../assets/speeding/other_side.webp";
-import FrontAxo from "../../assets/speeding/front_axo.webp";
-import Side from "../../assets/speeding/side.webp"
-import Back from "../../assets/speeding/back.webp"
-import FrontLights from "../../assets/speeding/front_lights.webp";
-import BackLights from "../../assets/speeding/back_lights.webp";
+import OtherSide from "../../../public/speeding2/side2.jpg";
+import Front from "../../../public/speeding2/front.jpg";
+import Side from "../../../public/speeding2/side.jpg"
+import Back from "../../../public/speeding2/back.jpg"
+
 import Sonar from "../../assets/speeding/sonar.jpg";
 import Sonar2 from "../../assets/speeding/sonar2.jpg";
 import SonarBox from "../../assets/speeding/sonar_box.jpg";
 import Remote from "../../assets/speeding/remote.jpg";
 
-import SideAxo from "../../assets/speeding/side_axo.webp"
 ---
 
 <div id="container">
@@ -24,23 +22,22 @@ import SideAxo from "../../assets/speeding/side_axo.webp"
   <main class="container">
     <div class="center-sec">
       <section id="sec-one">
-        <h1 class="mobile-h1">Zavážacia loďka Speeding I</h1>
-        <SpeedingSlider />
+        <h1 class="mobile-h1">Zavážacia loďka Speeding II</h1>
+        <SpeedingSlider2 />
   
         <div class="intro">
-          <h1 class="desktop-h1">Zavážacia loďka Speeding I</h1>
+          <h1 class="desktop-h1">Zavážacia loďka Speeding II</h1>
           <p class="desc">
-          Speeding I je rýchla zavažacia lodička určená pre rybárov, ktorí chcú jednoducho a presne a 
-         zakrmovať aj na väčšie vzdialenosti. Ponúka dvojicu výkonných 
-          uhlíkových motorov, GPS so 40 bodmi a nosnosťou až 2,5 kg. Vďaka LED 
-          osvetleniu je skvele viditeľná aj v horších podmienkach.
+          Speeding II je veľmi rýchla zavažacia lodička určená pre rybárov, ktorí chcú (fakt)rýchlo a presne a 
+         zakrmovať. Ponúka dvojicu výkonných 
+          bezuhlíkových motorov, GPS so 40 bodmi a nosnosťou až 2,5 kg. Vďaka rýchlosťi je vhodné aj na tečúcé vody.
           </p>
           <p class="para">
             Dostupnosť<span class="spacer"> - - - - - </span>
             <span class="availability">Skladom</span>
           </p>
           <p class="price">
-            €330
+            450€
           </p>
           <p class="para">Vybavenie loďky:</p>
           <div class="features">
@@ -65,16 +62,16 @@ import SideAxo from "../../assets/speeding/side_axo.webp"
               Slovenský manuál
               &#x2705;
             </span>
+            <span class="feature">
+              Vhodné na tečúcé vody
+              &#x2705;
+            </span>
           </div>
           <p class="para">Dostupné v farbách:</p>
           <div class="features">
             <span class="feature">
-             &#x2B1B;
-              Čierná
-            </span>
-            <span class="feature">
-              &#128997;
-              Červená
+             &#129001;
+              Zelená
             </span>
           </div>
           <p class="para">Info:</p>
@@ -93,11 +90,11 @@ import SideAxo from "../../assets/speeding/side_axo.webp"
       <section id="sec-two">
         <h2>Popis loďky</h2>
         <div class="video-holder">
-          <iframe width="1106" height="622" src="https://www.youtube.com/embed/PpLvhJpx-Bw" title="Zavážacia Loďka Speeding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mEbDh4549JI?si=16l-2JY2DJBqLjLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-
+        
         <h3>Technické Údaje</h3>
-
+        
         <ul class="content-bullets">
           <li class="content-bullet boldb">
             Li-ion batéria 12,6V/35Ah(viem dodať aj silnejšie, až 24Ah), výdrž na jedno nabitie je 4-5 hodín.
@@ -105,6 +102,7 @@ import SideAxo from "../../assets/speeding/side_axo.webp"
           <li class="content-bullet">
             2 komory s nosnosťou 2,5kg.
           </li>
+          <li class="content-bullet boldb">Vhodné aj na tečúcé vody</li>
           <li class="content-bullet">
             Vďaka GPS viete uložiť 40 pozicií, ktoré loďka vie veľmi
             presne najsť.
@@ -113,7 +111,7 @@ import SideAxo from "../../assets/speeding/side_axo.webp"
             Loďka má radioový systém s 2,4Ghz s dosahom 500 metrov.
           </li>
           <li class="content-bullet boldb">
-            Rýchlosť je 120/130 metrov za minutu.
+            Rýchlosť je 230 metrov za minutu.
           </li>
           <li class="content-bullet">
             Rozmery: dĺžka 70cm, šírka 29cm, výška 20cm.
@@ -133,14 +131,14 @@ import SideAxo from "../../assets/speeding/side_axo.webp"
           <li class="content-bullet">Vrtule sú chránené proti zamotaniu do silónu alebo vodných rastlín.</li>
         </ul>
 
-        <div class="image-sec">
+        <!-- <div class="image-sec">
           <Image
             src={SideAxo}
             alt="Speeding"
             loading="lazy"
             class="ren-image"
           />
-        </div>
+        </div> -->
 
         <div class="content-sec">
           <h3>Servis</h3>
@@ -179,7 +177,7 @@ import SideAxo from "../../assets/speeding/side_axo.webp"
           <h3>Fotogaléria</h3>
           <div class="image-sec">
             <Image
-              src={FrontAxo}
+              src={Front}
               alt="renegade"
               loading="lazy"
               class="ren-image"
@@ -195,13 +193,19 @@ import SideAxo from "../../assets/speeding/side_axo.webp"
               alt="renegade"
               loading="lazy"
               class="ren-image tall"
-            />
-            <Image
-            src={Back}
-            alt="renegade"
-            loading="lazy"
-            class="ren-image"
-            />
+              />
+              <Image
+              src={Back}
+              alt="renegade"
+              loading="lazy"
+              class="ren-image"
+              />
+              <Image
+              src={Remote}
+                alt="renegade"
+                loading="lazy"
+                class="ren-image"
+              />
             <p class="para"></p>
             <p class="para">Lucky 718Li:</p>
             <Image
@@ -220,24 +224,6 @@ import SideAxo from "../../assets/speeding/side_axo.webp"
             <p class="para">Lucky LH-1B:</p>
             <Image
               src={Sonar2}
-              alt="renegade"
-              loading="lazy"
-              class="ren-image"
-            />
-            <Image
-            src={Remote}
-              alt="renegade"
-              loading="lazy"
-              class="ren-image"
-            />
-            <Image
-              src={FrontLights}
-              alt="renegade"
-              loading="lazy"
-              class="ren-image"
-            />
-            <Image
-              src={BackLights}
               alt="renegade"
               loading="lazy"
               class="ren-image"

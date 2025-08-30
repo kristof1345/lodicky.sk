@@ -1,7 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import RenegadeFront3 from "../assets/renegade/front3.webp";
-// import SpeedingFrontAxoHero from "../assets/speeding/front_axo_hero.webp";
+import SpeedingFrontAxoHero from "../assets/speeding/front_axo_hero.webp";
+import Speeding2 from "../../public/speeding2/side.jpg";
 ---
 
 <div id="container">
@@ -14,7 +15,7 @@ import RenegadeFront3 from "../assets/renegade/front3.webp";
         <h2>Zavážacie loďka Renegade</h2>
         <span class="availability">Skladom</span>
       </span>
-      <span class="price">€1 299</span>
+      <span class="price">1 299€</span>
       <div class="features">
         <span class="feature">
           GPS
@@ -30,7 +31,7 @@ import RenegadeFront3 from "../assets/renegade/front3.webp";
           &#x2705;
         </span>
         <span class="feature">
-          Slovenský menu
+          SK menu
           &#x2705;
         </span>
       </div>
@@ -38,37 +39,72 @@ import RenegadeFront3 from "../assets/renegade/front3.webp";
     </div>
   </a>
 
-  <!-- <a href="/speeding" class="grid-item">
+    <a href="/speeding1" class="grid-item">
     <div class="img-holder">
-      <Image class="image" src={SpeedingFrontAxoHero} alt="Zavážacie loďka Renegade" loading="eager"/>
+      <Image class="image" src={SpeedingFrontAxoHero} alt="Zavážacie loďka Speeding I" loading="eager"/>
     </div>
     <div class="content-holder">
       <span>
-        <h2>Zavážacie loďka Speeeding</h2>
+        <h2>Zavážacie loďka Speeeding I</h2>
         <span class="availability">Skladom</span>
       </span>
-      <span class="price">€399</span>
+      <span class="price">330€</span>
       <div class="features">
         <span class="feature">
           GPS
           &#x2705;
         </span>
         <span class="feature">
-          Sonar
+          LED-y vpredu a vzadu
           &#x2705;
         </span>
-        <span class="feature">
-          Autopilot
+        <!-- <span class="feature">
+          Dosah 500m-ov
           &#x2705;
-        </span>
+        </span> -->
         <span class="feature">
-          Slovenský menu
+          SK manuál
           &#x2705;
         </span>
       </div>
-      <p class="desc">Renegade je inteligentná zavažacia lodička vytvorená pre kaprárov, ktorí chcú loviť ťažko dostupné miesta. Zabudovaný sonar vám umožní vidieť hĺbku vody a nájsť miesta, kde veľké kapry...</p>
+      <p class="desc">Speeding I je rýchla zavažacia lodička určená pre rybárov, ktorí chcú jednoducho a presne a 
+         zakrmovať aj na väčšie vzdialenosti. Ponúka dvojicu výkonných 
+          uhlíkových motorov, GPS...</p>
     </div>
-  </a> -->
+  </a>
+
+  <a href="/speeding2" class="grid-item">
+    <div class="img-holder">
+      <Image class="image" src={Speeding2} alt="Zavážacie loďka Speeding II" loading="eager"/>
+    </div>
+    <div class="content-holder">
+      <span>
+        <h2>Zavážacie loďka Speeeding II</h2>
+        <span class="availability">Skladom</span>
+      </span>
+      <span class="price">450€</span>
+      <div class="features">
+        <span class="feature">
+          GPS
+          &#x2705;
+        </span>
+        <span class="feature">
+          Vhodné na tečúcé vody
+          &#x2705;
+        </span>
+        <!-- <span class="feature">
+          Dosah 500m-ov
+          &#x2705;
+        </span> -->
+        <span class="feature">
+          SK manuál
+          &#x2705;
+        </span>
+      </div>
+      <p class="desc">Speeding II je veľmi rýchla zavažacia lodička určená pre rybárov, ktorí chcú (fakt)rýchlo a presne a 
+         zakrmovať. Vďaka rýchlosťi je vhodné aj na tečúcé vody...</p>
+    </div>
+  </a>
 </div>
 
 <style>
