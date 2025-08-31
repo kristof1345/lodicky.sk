@@ -3,17 +3,12 @@ import Header from "../../components/Header.astro";
 import Footer from "../Footer.astro";
 
 import Image from "astro/components/Image.astro";
-import SpeedingSlider2 from "../../components/SpeedingSlider2.astro";
+import D008Slider from "../../components/D008Slider.astro";
 
-import OtherSide from "../../../public/speeding2/side2.jpg";
-import Front from "../../../public/speeding2/front.jpg";
-import Side from "../../../public/speeding2/side.jpg"
-import Back from "../../../public/speeding2/back.jpg"
-
-import Sonar from "../../assets/speeding/sonar.jpg";
-import Sonar2 from "../../assets/speeding/sonar2.jpg";
-import SonarBox from "../../assets/speeding/sonar_box.jpg";
-import Remote from "../../assets/speeding/remote.jpg";
+import Bat from "../../../public/d008/bat.jpg";
+import Front from "../../../public/d008/top.jpg";
+import Side from "../../../public/d008/side2.jpg"
+import Back from "../../../public/d008/back.jpg"
 
 ---
 
@@ -22,36 +17,26 @@ import Remote from "../../assets/speeding/remote.jpg";
   <main class="container">
     <div class="center-sec">
       <section id="sec-one">
-        <h1 class="mobile-h1">Zavážacia loďka Speeding II</h1>
-        <SpeedingSlider2 />
+        <h1 class="mobile-h1">Zavážacia loďka D008</h1>
+        <D008Slider />
   
         <div class="intro">
-          <h1 class="desktop-h1">Zavážacia loďka Speeding II</h1>
+          <h1 class="desktop-h1">Zavážacia loďka D008</h1>
           <p class="desc">
-          Speeding II je veľmi rýchla zavažacia lodička určená pre rybárov, ktorí chcú (fakt)rýchlo a presne a 
-         zakrmovať. Ponúka dvojicu výkonných 
-          bezuhlíkových motorov, GPS so 40 bodmi a nosnosťou až 2,5 kg. Vďaka rýchlosťi je vhodné aj na tečúcé vody.
+            D008 je zavažacia lodička od renomovaného výrobcu Manuowell. Ponúka trojbodový GPS, dve komory s nosnosťou 1,5kg, a dosah až do 500 metrov.
           </p>
           <p class="para">
             Dostupnosť<span class="spacer"> - - - - - </span>
             <span class="availability">Skladom</span>
           </p>
           <p class="price">
-            420€
+            230€
           </p>
           <p class="para">Vybavenie loďky:</p>
           <div class="features">
             <span class="feature">
-              GPS(40 bodov)
+              GPS(3 body)
               <!-- &#x2713; -->
-              &#x2705;
-            </span>
-            <!-- <span class="feature">
-              Sonar
-              &#x2705;
-            </span> -->
-            <span class="feature">
-              LED-y vpredu a vzadu
               &#x2705;
             </span>
             <span class="feature">
@@ -62,20 +47,16 @@ import Remote from "../../assets/speeding/remote.jpg";
               Slovenský manuál
               &#x2705;
             </span>
-            <span class="feature">
-              Vhodné na tečúcé vody
-              &#x2705;
-            </span>
           </div>
-          <p class="para">Dostupné v farbách:</p>
+          <!-- <p class="para">Dostupné v farbách:</p>
           <div class="features">
             <span class="feature">
              &#129001;
               Zelená
             </span>
-          </div>
-          <p class="para">Info:</p>
-          <div class="info">Dá sa domontovať sonar Lucky 718Li s dosahom 500m(230€) alebo pripevniť s držiakom nahadzovací sonar Lucky LH-1B s dosahom 240m(150€)</div>
+          </div> -->
+          <!-- <p class="para">Info:</p>
+          <div class="info">Dá sa domontovať sonar Lucky 718Li s dosahom 500m(230€) alebo pripevniť s držiakom nahadzovací sonar Lucky LH-1B s dosahom 240m(150€)</div> -->
           <p class="para desc-buy">
             Ľoďku viete nakúpiť alebo vyskúšať(zadarmo) s kontaktovaním čísla: +421 903 763 327
           </p>
@@ -90,55 +71,44 @@ import Remote from "../../assets/speeding/remote.jpg";
       <section id="sec-two">
         <h2>Popis loďky</h2>
         <div class="video-holder">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/mEbDh4549JI?si=16l-2JY2DJBqLjLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="417" height="742" src="https://www.youtube.com/embed/3b9ATMk0Yog" title="Zavážacia loďka D008" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         
         <h3>Technické Údaje</h3>
         
         <ul class="content-bullets">
           <li class="content-bullet boldb">
-            Li-ion batéria 12,6V/35Ah(viem dodať aj silnejšie), výdrž na jedno nabitie je 4-5 hodín.
+            Li-ion batéria 8,4V/15Ah(viem dodať aj silnejšie), výdrž na jedno nabitie je 7-8 hodín.
           </li>
           <li class="content-bullet">
-            2 komory s nosnosťou 2,5kg.
+            2 komory s nosnosťou 1,5kg.
           </li>
-          <li class="content-bullet boldb">Vhodné aj na tečúcé vody</li>
-          <li class="content-bullet">
-            Vďaka GPS viete uložiť 40 pozicií, ktoré loďka vie veľmi
+          <li class="content-bullet boldb">
+            Vďaka GPS viete uložiť 3 pozicií, ktoré loďka vie veľmi
             presne najsť.
           </li>
-          <li class="content-bullet boldb">
+          <li class="content-bullet">
             Loďka má radioový systém s 2,4Ghz s dosahom 500 metrov.
           </li>
+          <li class="content-bullet boldb">
+            Materiál je ABS s carbonovým povlakom.
+          </li>
           <li class="content-bullet">
-            Rýchlosť je 230 metrov za minutu.
+            Rozmery: dĺžka 50cm, šírka 29,5cm, výška 17cm.
           </li>
-          <li class="content-bullet boldb">
-            Rozmery: dĺžka 70cm, šírka 29cm, výška 20cm.
-          </li>
-          <li class="content-bullet">Váha 4,5kg(s batériou).</li>
-          <li class="content-bullet boldb">
+          <li class="content-bullet boldb">Spravil som aj odvetranie kvôli kondenzu, úplne uzavreté loďky skôr alebo neskôr pokazia sa kvôli vľhkosti.</li>
+          <li class="content-bullet">
             Dá sa naprogramovať, aby automaticky otvoril komory, keď dorazí na
             označení bod.
           </li>
-          <li class="content-bullet">
-            Predu 2 bielé, zadu 2 modré LED svetlá.
-          </li>
           <li class="content-bullet boldb">
-            Lodičku netreba nakalibrovať pred použitím GPS.
+            Motory sú zatesnené proti vode s guferami.
           </li>
-          <li class="content-bullet">Doprava zadarmo v rámci SR.</li>
-          <li class="content-bullet boldb">Vrtule sú chránené proti zamotaniu do silónu alebo vodných rastlín.</li>
+          <li class="content-bullet">
+            Lodičku treba nakalibrovať pred použitím GPS.
+          </li>
+          <li class="content-bullet boldb">Doprava zadarmo v rámci SR.</li>
         </ul>
-
-        <!-- <div class="image-sec">
-          <Image
-            src={SideAxo}
-            alt="Speeding"
-            loading="lazy"
-            class="ren-image"
-          />
-        </div> -->
 
         <div class="content-sec">
           <h3>Servis</h3>
@@ -153,23 +123,21 @@ import Remote from "../../assets/speeding/remote.jpg";
         <div class="content-sec">
           <h3>Rozmery</h3>
           <ul class="content-bullets">
-            <li class="content-bullet">Rozmery: dĺžka 70cm, šírka 29cm, výška 20cm.</li>
-            <li class="content-bullet">Váha: 4,5kg(s batériami)</li>
+            <li class="content-bullet">Rozmery: dĺžka 50cm, šírka 29,5cm, výška 17cm.</li>
           </ul>
         </div>
 
         <div class="content-sec">
           <h3>Balenie</h3>
-          <p class="para">Balenie: Lodička + prepravná taška, 35Ah Batérie, Ovládač, Nabýjačka pre lodičku a pre ovládač</p>
+          <p class="para">Balenie: Lodička + prepravná taška, 15Ah Batéria, Ovládač + 2x AAA batéria, Nabýjačka pre lodičku a pre ovládač</p>
         </div>
 
         <div class="content-sec">
           <h3>Príslušenstvo</h3>
           <p class="para">Dá sa doobjednať náhradné batériá alebo sonar.</p>
           <ul class="content-bullets">
-            <li class="content-bullet">35Ah Batéria - 95€</li>
-            <li class="content-bullet">45Ah Batéria - 135€</li>
-            <li class="content-bullet boldb">Dá sa domontovať sonar Lucky 718Li s dosahom 500m(230€) alebo pripevniť s držiakom nahadzovací sonar Lucky LH-1B s dosahom 240m(150€)</li>
+            <li class="content-bullet">20Ah Batéria - 75€</li>
+            <li class="content-bullet">24Ah Batéria - 85€</li>
           </ul>
         </div>
         
@@ -189,7 +157,7 @@ import Remote from "../../assets/speeding/remote.jpg";
               class="ren-image"
             />
             <Image
-              src={OtherSide}
+              src={Bat}
               alt="renegade"
               loading="lazy"
               class="ren-image tall"
@@ -200,34 +168,7 @@ import Remote from "../../assets/speeding/remote.jpg";
               loading="lazy"
               class="ren-image"
               />
-              <Image
-              src={Remote}
-                alt="renegade"
-                loading="lazy"
-                class="ren-image"
-              />
-            <p class="para"></p>
-            <p class="para">Lucky 718Li:</p>
-            <Image
-              src={Sonar}
-              alt="renegade"
-              loading="lazy"
-              class="ren-image"
-            />
-            <Image
-            src={SonarBox}
-            alt="renegade"
-            loading="lazy"
-            class="ren-image"
-            />
-            <p class="para"></p>
-            <p class="para">Lucky LH-1B:</p>
-            <Image
-              src={Sonar2}
-              alt="renegade"
-              loading="lazy"
-              class="ren-image"
-            />
+           
           </div>
         </div>
 

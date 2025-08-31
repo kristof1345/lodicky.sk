@@ -1,0 +1,149 @@
+---
+import Side from "../../public/d008/side2.jpg";
+
+import PropSmall from "../assets/d008/prop_small.jpg";
+import FrontSmall from "../assets/d008/top_small.jpg";
+import SideSmall from "../assets/d008/side2_small.jpg"
+import BackSmall from "../assets/d008/back_small.jpg"
+import BatSmall from "../assets/d008/bat_small.jpg"
+
+import SliderControls from "./SliderControls.astro";
+import Image from "astro/components/Image.astro";
+
+---
+
+<div class="slideshow-container">
+  <div class="holder">
+    <img src={Side.src} id="imag" class="first-load" alt="Renegade" data-img="1" loading="eager"/>
+
+    <div id="preview-container">
+      <div id="preview">
+        <div class="preview-holder" style="border: 1px solid rgba(125, 164, 238, 0.407);">
+          <Image src={SideSmall} class="preview-image" alt="renegade" data-nth="0" loading="eager"/>
+        </div>
+        <div class="preview-holder">
+          <Image src={FrontSmall} class="preview-image" alt="renegade" data-nth="1" loading="eager"/>
+        </div>
+        <div class="preview-holder">
+          <Image src={PropSmall} class="preview-image" alt="renegade" data-nth="2" loading="eager"/>
+        </div>
+        <div class="preview-holder">
+          <Image src={BackSmall} class="preview-image" alt="renegade" data-nth="3" loading="eager"/>
+        </div>
+        <div class="preview-holder">
+          <Image src={BatSmall} class="preview-image" alt="renegade" data-nth="4" loading="eager"/>
+        </div>
+      </div>
+    </div>
+
+    <SliderControls/>
+  </div>
+</div>
+
+
+<script type="module" defer>
+  let images = ["/d008/side2.jpg", "/d008/top.jpg", "/d008/prop.jpg", "/d008/back.jpg", "/d008/bat.jpg"];
+  let previewImages = document.querySelectorAll(".preview-image");
+  let img = document.getElementById("imag");
+
+  previewImages.forEach((preview) => {
+    preview.addEventListener("click", () => {
+      img.src = images[preview.dataset.nth];
+      removeBorders();
+      preview.parentElement.style.border = "1px solid rgba(125, 164, 238, 0.407)";
+    })
+  })
+
+  function removeBorders() {
+    previewImages.forEach((preview) => {
+      preview.parentElement.style.border = "1px solid white";
+    })
+  }
+</script>
+
+<style>
+.easeload{
+  opacity: 0;
+  -webkit-transition: all 2s ease; 
+  -moz-transition: all 2s ease; 
+  -ms-transition: all 2s ease; 
+  -o-transition: all 2s ease; 
+}
+
+#imag {
+  max-height: 550px;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  user-select: none;
+}
+
+.holder {
+  text-align: center;
+  width: 650px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+#preview-container {
+  overflow-y: hidden;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#preview-container::-webkit-scrollbar {
+  display: none;
+}
+
+#preview {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  transition: transform 0.5s ease;
+  user-select: none;
+  /* border-radius: 5px; */
+}
+
+.preview-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.207);
+}
+
+.preview-holder:hover {
+  border: 1px solid rgba(125, 164, 238, 0.407);
+}
+
+#preview img {
+  width: 100px;
+  height: 76px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  object-fit: contain;
+}
+
+@media (max-width: 1450px) {
+  #imag {
+  max-height: 550px;
+}
+
+.holder {
+  width: 580px;
+}
+}
+
+@media (max-width: 1040px) {
+  .holder {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .holder {
+    width: 100%;
+  }
+}
+</style>
