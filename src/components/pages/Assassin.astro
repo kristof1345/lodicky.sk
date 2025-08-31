@@ -1,0 +1,489 @@
+---
+import Header from "../../components/Header.astro";
+import Footer from "../Footer.astro";
+
+import Image from "astro/components/Image.astro";
+import SpeedingSlider2 from "../../components/SpeedingSlider2.astro";
+
+import OtherSide from "../../../public/speeding2/side2.jpg";
+import Front from "../../../public/speeding2/front.jpg";
+import Side from "../../../public/speeding2/side.jpg"
+import Back from "../../../public/speeding2/back.jpg"
+
+import Sonar from "../../assets/speeding/sonar.jpg";
+import Sonar2 from "../../assets/speeding/sonar2.jpg";
+import SonarBox from "../../assets/speeding/sonar_box.jpg";
+import Remote from "../../assets/speeding/remote.jpg";
+  
+---
+
+<div id="container">
+	<Header />
+  <main class="container">
+    <div class="center-sec">
+      <section id="sec-one">
+        <h1 class="mobile-h1">Zavážacia loďka Assassin</h1>
+        <SpeedingSlider2 />
+  
+        <div class="intro">
+          <h1 class="desktop-h1">Zavážacia loďka Assassin</h1>
+          <p class="desc">
+          Speeding II je veľmi rýchla zavažacia lodička určená pre rybárov, ktorí chcú (fakt)rýchlo a presne a 
+         zakrmovať. Ponúka dvojicu výkonných 
+          bezuhlíkových motorov, GPS so 40 bodmi a nosnosťou až 2,5 kg. Vďaka rýchlosťi je vhodné aj na tečúcé vody.
+          </p>
+          <p class="para">
+            Dostupnosť<span class="spacer"> - - - - - </span>
+            <span class="availability">Skladom</span>
+          </p>
+          <p class="price">
+            550€
+          </p>
+          <p class="para">Vybavenie loďky:</p>
+          <div class="features">
+            <span class="feature">
+              GPS(40 bodov)
+              <!-- &#x2713; -->
+              &#x2705;
+            </span>
+            <!-- <span class="feature">
+              Sonar
+              &#x2705;
+            </span> -->
+            <span class="feature">
+              LED-y vpredu a vzadu
+              &#x2705;
+            </span>
+            <span class="feature">
+              Dosah 500m-ov
+              &#x2705;
+            </span>
+            <span class="feature">
+              Slovenský manuál
+              &#x2705;
+            </span>
+            <span class="feature">
+              Vhodné na tečúcé vody
+              &#x2705;
+            </span>
+          </div>
+          <p class="para">Dostupné v farbách:</p>
+          <div class="features">
+            <span class="feature">
+             &#129001;
+              Zelená
+            </span>
+          </div>
+          <p class="para">Info:</p>
+          <div class="info">Dá sa domontovať sonar Lucky 718Li s dosahom 500m(230€) alebo pripevniť s držiakom nahadzovací sonar Lucky LH-1B s dosahom 240m(150€)</div>
+          <p class="para desc-buy">
+            Ľoďku viete nakúpiť alebo vyskúšať(zadarmo) s kontaktovaním čísla: +421 903 763 327
+          </p>
+          <p class="para">
+            Doprava: Zadarmo vrámci Slovenska.
+          </p>
+        </div>
+      </section>
+    </div>
+    
+    <div class="center-sec">
+      <section id="sec-two">
+        <h2>Popis loďky</h2>
+        <div class="video-holder">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mEbDh4549JI?si=16l-2JY2DJBqLjLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <h3>Technické Údaje</h3>
+        
+        <ul class="content-bullets">
+          <li class="content-bullet boldb">
+            Li-ion batéria 12,6V/35Ah(viem dodať aj silnejšie), výdrž na jedno nabitie je 4-5 hodín.
+          </li>
+          <li class="content-bullet">
+            2 komory s nosnosťou 2,5kg.
+          </li>
+          <li class="content-bullet boldb">Vhodné aj na tečúcé vody</li>
+          <li class="content-bullet">
+            Vďaka GPS viete uložiť 40 pozicií, ktoré loďka vie veľmi
+            presne najsť.
+          </li>
+          <li class="content-bullet boldb">
+            Loďka má radioový systém s 2,4Ghz s dosahom 500 metrov.
+          </li>
+          <li class="content-bullet">
+            Rýchlosť je 230 metrov za minutu.
+          </li>
+          <li class="content-bullet boldb">
+            Rozmery: dĺžka 70cm, šírka 29cm, výška 20cm.
+          </li>
+          <li class="content-bullet">Váha 4,5kg(s batériou).</li>
+          <li class="content-bullet boldb">
+            Dá sa naprogramovať, aby automaticky otvoril komory, keď dorazí na
+            označení bod.
+          </li>
+          <li class="content-bullet">
+            Predu 2 bielé, zadu 2 modré LED svetlá.
+          </li>
+          <li class="content-bullet boldb">
+            Lodičku netreba nakalibrovať pred použitím GPS.
+          </li>
+          <li class="content-bullet">Doprava zadarmo v rámci SR.</li>
+          <li class="content-bullet boldb">Vrtule sú chránené proti zamotaniu do silónu alebo vodných rastlín.</li>
+        </ul>
+
+        <!-- <div class="image-sec">
+          <Image
+            src={SideAxo}
+            alt="Speeding"
+            loading="lazy"
+            class="ren-image"
+          />
+        </div> -->
+
+        <div class="content-sec">
+          <h3>Servis</h3>
+          <ul class="content-bullets">
+            <li class="content-bullet">Viac ako 8 rokov skúsenosti v oprave zavažacích loďičiek.</li>
+            <li class="content-bullet">Servis vrámci SR.</li>
+            <li class="content-bullet">Záruka na 2 roky.</li>
+            <li class="content-bullet">Všetky lodičky sú skúšané a testované na vode pred predajom.</li>
+          </ul>
+        </div>
+
+        <div class="content-sec">
+          <h3>Rozmery</h3>
+          <ul class="content-bullets">
+            <li class="content-bullet">Rozmery: dĺžka 70cm, šírka 29cm, výška 20cm.</li>
+            <li class="content-bullet">Váha: 4,5kg(s batériami)</li>
+          </ul>
+        </div>
+
+        <div class="content-sec">
+          <h3>Balenie</h3>
+          <p class="para">Balenie: Lodička + prepravná taška, 35Ah Batérie, Ovládač, Nabýjačka pre lodičku a pre ovládač</p>
+        </div>
+
+        <div class="content-sec">
+          <h3>Príslušenstvo</h3>
+          <p class="para">Dá sa doobjednať náhradné batériá alebo sonar.</p>
+          <ul class="content-bullets">
+            <li class="content-bullet">35Ah Batéria - 95€</li>
+            <li class="content-bullet">45Ah Batéria - 135€</li>
+            <li class="content-bullet boldb">Dá sa domontovať sonar Lucky 718Li s dosahom 500m(230€) alebo pripevniť s držiakom nahadzovací sonar Lucky LH-1B s dosahom 240m(150€)</li>
+          </ul>
+        </div>
+        
+        <div class="content-">
+          <h3>Fotogaléria</h3>
+          <div class="image-sec">
+            <Image
+              src={Front}
+              alt="renegade"
+              loading="lazy"
+              class="ren-image"
+            />
+            <Image
+              src={Side}
+              alt="renegade"
+              loading="lazy"
+              class="ren-image"
+            />
+            <Image
+              src={OtherSide}
+              alt="renegade"
+              loading="lazy"
+              class="ren-image tall"
+              />
+              <Image
+              src={Back}
+              alt="renegade"
+              loading="lazy"
+              class="ren-image"
+              />
+              <Image
+              src={Remote}
+                alt="renegade"
+                loading="lazy"
+                class="ren-image"
+              />
+            <p class="para"></p>
+            <p class="para">Lucky 718Li:</p>
+            <Image
+              src={Sonar}
+              alt="renegade"
+              loading="lazy"
+              class="ren-image"
+            />
+            <Image
+            src={SonarBox}
+            alt="renegade"
+            loading="lazy"
+            class="ren-image"
+            />
+            <p class="para"></p>
+            <p class="para">Lucky LH-1B:</p>
+            <Image
+              src={Sonar2}
+              alt="renegade"
+              loading="lazy"
+              class="ren-image"
+            />
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</div>
+
+<style>
+  /* overwriting globals */
+.container {
+  margin: 0 30px;
+  padding-bottom: 0;
+}
+
+.desc, .para {
+  line-height: 1.7;
+}
+
+.para {
+  margin-bottom: 15px;
+}
+
+.desc {
+  margin-bottom: 15px
+}
+
+.desc-buy {
+  font-weight: 600; 
+  font-size: 18px; 
+  margin-top: 30px;
+}
+
+.features {
+  display:flex;
+  gap:10px;
+  /* justify-content: center; */
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.feature {
+  /* background-color: rgba(125, 164, 238, 0.5); */
+  background-color: rgba(125, 164, 238, 0.307);
+  padding: 4px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.price {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.info {
+  color: red
+}
+
+h1.mobile-h1 {
+  display: none;
+  padding-bottom: 15px;
+}
+
+.desktop-h1 {
+  font-size: 2.75rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.availability {
+  color: rgb(65, 130, 249);
+}
+.spacer {
+  margin: 0 20px;
+}
+
+#sec-one {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0px 60px 0px;
+  gap: 35px;
+  width: 1330px;
+  margin:  0 auto 0 auto;
+}
+
+#sec-two {
+  margin: 0 auto 0 auto;
+  width: 820px;
+}
+
+#sec-two h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#sec-two h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#sec-two h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.intro {
+  flex-grow: 1;
+}
+
+.content-bullets {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.content-bullet {
+  padding-bottom: 15px;
+}
+
+.boldb {
+  font-weight: 600;
+}
+
+.video-holder {
+  margin-bottom: 35px;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 3px;
+}
+
+.image-sec {
+  width: 70%;
+  margin: 0px auto 30px auto;
+}
+
+.ren-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.content-sec {
+  margin-bottom: 30px;  
+}
+
+@media (max-width: 1450px) {
+  .container {
+    margin: 0 20px;
+  }
+
+  #sec-one {
+    padding: 35px 0px 50px 0px;
+    gap: 35px;
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .container {
+    margin: 0 20px;
+  }
+
+  #sec-one {
+    width: 1000px;
+  }
+
+  .desc-buy {
+    margin-top: 25px;
+  }
+
+  .features {
+    gap:8px;
+  }
+
+  .feature {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .desktop-h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1040px) {
+  h1.mobile-h1 {
+    display: block;
+    font-size: 2.75rem;
+    font-weight: 500;
+  }
+
+  h1.desktop-h1 {
+    display: none;
+  }
+
+  .desc-buy {
+    margin-top: 30px;
+  }
+
+  #sec-one {
+    flex-direction: column;
+    padding-top: 0;
+    gap: 0px;
+    width: 650px;
+  }
+
+  #sec-two {
+    width: 650px;
+  }
+
+  .intro {
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  .image-sec {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+
+  #sec-one {
+    gap: 0px;
+    width: 100%;
+  }
+
+  #sec-two {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 0 10px;
+  }
+
+  h1.mobile-h1 {
+    font-size: 2.25rem;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
+</style>
