@@ -3,17 +3,19 @@ import Header from "../../components/Header.astro";
 import Footer from "../Footer.astro";
 
 import Image from "astro/components/Image.astro";
-import SpeedingSlider2 from "../../components/SpeedingSlider2.astro";
+import AssassinSlider from "../../components/AssassinSlider.astro";
 
-import OtherSide from "../../../public/speeding2/side2.jpg";
-import Front from "../../../public/speeding2/front.jpg";
-import Side from "../../../public/speeding2/side.jpg"
-import Back from "../../../public/speeding2/back.jpg"
-
-import Sonar from "../../assets/speeding/sonar.jpg";
-import Sonar2 from "../../assets/speeding/sonar2.jpg";
-import SonarBox from "../../assets/speeding/sonar_box.jpg";
-import Remote from "../../assets/speeding/remote.jpg";
+import Sonar from "../../assets/assassin/sonar.jpg";
+import Axo1 from "../../assets/assassin/axo1.webp";
+import Back from "../../assets/assassin/back.jpg";
+import Front1 from "../../assets/assassin/front1.webp";
+import Handle2 from "../../assets/assassin/handle2.jpg";
+import Pack from "../../assets/assassin/pack.jpg";
+import Rozmetadlo from "../../assets/assassin/rozmetadlo.jpg";
+import Side from "../../assets/assassin/side.jpg";
+import Stojan from "../../assets/assassin/stojan.jpg";
+import Top from "../../assets/assassin/top.jpg";
+import Whole from "../../assets/assassin/whole.jpg";
   
 ---
 
@@ -23,7 +25,7 @@ import Remote from "../../assets/speeding/remote.jpg";
     <div class="center-sec">
       <section id="sec-one">
         <h1 class="mobile-h1">Zavážacia loďka Assassin</h1>
-        <SpeedingSlider2 />
+        <AssassinSlider />
   
         <div class="intro">
           <h1 class="desktop-h1">Zavážacia loďka Assassin</h1>
@@ -177,7 +179,7 @@ import Remote from "../../assets/speeding/remote.jpg";
           <h3>Fotogaléria</h3>
           <div class="image-sec">
             <Image
-              src={Front}
+              src={Front1}
               alt="renegade"
               loading="lazy"
               class="ren-image"
@@ -189,7 +191,7 @@ import Remote from "../../assets/speeding/remote.jpg";
               class="ren-image"
             />
             <Image
-              src={OtherSide}
+              src={Axo1}
               alt="renegade"
               loading="lazy"
               class="ren-image tall"
@@ -201,29 +203,45 @@ import Remote from "../../assets/speeding/remote.jpg";
               class="ren-image"
               />
               <Image
-              src={Remote}
+              src={Handle2}
                 alt="renegade"
                 loading="lazy"
                 class="ren-image"
               />
-            <p class="para"></p>
-            <p class="para">Lucky 718Li:</p>
+              <Image
+              src={Rozmetadlo}
+                alt="renegade"
+                loading="lazy"
+                class="ren-image"
+              />
+              <Image
+              src={Stojan}
+                alt="renegade"
+                loading="lazy"
+                class="ren-image"
+              />
+              <Image
+              src={Top}
+                alt="renegade"
+                loading="lazy"
+                class="ren-image"
+              />
+              <Image
+              src={Whole}
+                alt="renegade"
+                loading="lazy"
+                class="ren-image"
+              />
+              <Image
+              src={Pack}
+                alt="renegade"
+                loading="lazy"
+                class="ren-image"
+              />
+              <p class="para"></p>
+            <p class="para">Lucky M700:</p>
             <Image
               src={Sonar}
-              alt="renegade"
-              loading="lazy"
-              class="ren-image"
-            />
-            <Image
-            src={SonarBox}
-            alt="renegade"
-            loading="lazy"
-            class="ren-image"
-            />
-            <p class="para"></p>
-            <p class="para">Lucky LH-1B:</p>
-            <Image
-              src={Sonar2}
               alt="renegade"
               loading="lazy"
               class="ren-image"
